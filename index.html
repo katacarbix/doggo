@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doggo</title>
+	<style>
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	color: #fff;
+} body {
+	background-image: url();
+	background-repeat: repeat;
+	background-position: center;
+	background-size: fit;
+}
+	</style>
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+	q = "dog";
+	api_key = "dc6zaTOxFJmzC";
+	
+	request = new XMLHttpRequest;
+	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key='+api_key+'&tag='+q, true);
+	
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data.image_url;
+			document.body.style.backgroundImage = "url('"+data+"')";
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+
+	request.onerror = function() {
+		console.log('connection error');
+	};
+
+	request.send();
+});
+	</script>
+</head>
+<body>	
+	&nbsp;
+</body>
+</html>
