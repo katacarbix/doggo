@@ -10,11 +10,23 @@ html, body {
 	height: 100%;
 	background-color: #000;
 	color: #fff;
+	font-family: sans-serif;
 } body {
 	background-image: url();
 	background-repeat: repeat;
 	background-position: center;
 	background-size: fit;
+} #attribution {
+	background-color: #000;
+	color: #fff;
+	padding: 6px;
+	font-size: 12px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+} #attribution:hover {
+	text-decoration: underline;
 }
 	</style>
 	<script>
@@ -42,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 	</script>
 </head>
-<body>	
-	&nbsp;
+<body>
+	<a id="attribution" href="http://giphy.com">Powered by Giphy</a>
 </body>
 </html>
