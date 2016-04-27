@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>doggo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 html, body {
 	margin: 0;
@@ -30,13 +32,12 @@ html, body {
 }
 	</style>
 	<script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function(){
+	// GIPHY loader code
 	q = "dog";
 	api_key = "dc6zaTOxFJmzC";
-	
 	request = new XMLHttpRequest;
 	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key='+api_key+'&tag='+q, true);
-	
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400){
 			data = JSON.parse(request.responseText).data.image_url;
@@ -45,11 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			console.log('reached giphy, but API returned an error');
 		 }
 	};
-
 	request.onerror = function() {
 		console.log('connection error');
 	};
-
 	request.send();
 });
 	</script>
