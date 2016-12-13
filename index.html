@@ -13,12 +13,16 @@ html, body {
 	background-color: #000;
 	color: #fff;
 	font-family: sans-serif;
-} body {
+}
+
+body {
 	background-image: url();
 	background-repeat: repeat;
 	background-position: center;
 	background-size: fit;
-} #attribution {
+}
+
+#attribution, #author {
 	background-color: #000;
 	color: #fff;
 	padding: 6px;
@@ -26,8 +30,11 @@ html, body {
 	text-decoration: none;
 	position: absolute;
 	bottom: 0px;
-	right: 0px;
-} #attribution:hover {
+}
+#author { left: 0px; }
+#attribution { right: 0px; }
+
+#attribution:hover, #author:hover {
 	text-decoration: underline;
 }
 	</style>
@@ -62,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	</script>
 </head>
 <body>
-	<a id="attribution" href="http://giphy.com">Powered by Giphy</a>
+	<a id="author" href="http://katacarbix.xyz">made by katacarbix</a>
+	<a id="attribution" href="http://giphy.com">powered by giphy</a>
 </body>
 </html>
