@@ -1,4 +1,4 @@
-# doggo.xyz
+# doggo.me
 cool dog website
 
-[check it out](http://doggo.xyz/)
+[check it out](http://doggo.me/)
