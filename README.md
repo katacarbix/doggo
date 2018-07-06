@@ -1,4 +1,4 @@
-# doggo.me
+# doggo
 cool dog website
 
-[check it out](http://doggo.me/)
+[check it out](http://katacarbix.xyz/doggo/)
