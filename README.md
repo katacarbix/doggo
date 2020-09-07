@@ -1,4 +1,4 @@
 # doggo
 cool dog website
 
-[check it out](http://katacarbix.xyz/doggo/)
+[check it out](http://katacarbix.github.io/doggo/)
