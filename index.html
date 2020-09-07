@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	q = "dog";
 	api_key = "dc6zaTOxFJmzC";
 	request = new XMLHttpRequest;
-	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key='+api_key+'&tag='+q, true);
+	request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key='+api_key+'&tag='+q, true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400){
 			data = JSON.parse(request.responseText).data.image_url;
@@ -58,19 +58,11 @@ document.addEventListener('DOMContentLoaded', function(){
 		console.log('connection error');
 	};
 	request.send();
-
-
-	// SoundCloud audio embedding
-	/* var scFrame = document.createElement("<iframe width=100% height=300 scrolling=no frameborder=no src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220678760&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>");
-	if(window.location.hash != 'nomusic'){
-		var scEmbed = document.body.appendChild(scFrame);
-		// scEmbed.style = "visibility: hidden;";
-	} */
 });
 	</script>
 </head>
 <body>
-	<a id="author" href="http://katacarbix.xyz">made by katacarbix</a>
-	<a id="attribution" href="http://giphy.com">powered by giphy</a>
+	<a id="author" href="https://ovine.xyz">made by katacarbix</a>
+	<a id="attribution" href="https://giphy.com">powered by giphy</a>
 </body>
 </html>
